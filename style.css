@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Inter', sans-serif;
+}
+
+:root{
+--green:hsl(75, 94%, 57%);
+--white:hsl(0, 0%, 100%);
+--grey700:hsl(0, 0%, 20%);
+--grey800:hsl(0, 0%, 12%);
+--grey900:hsl(0, 0%, 8%);
+--font-size:14px;
+}
+
+main{
+background-color:var(--grey900);
+min-height:100vh;
+display:grid;
+place-items:center;
+}
+
+main .profile{
+padding:2rem 2rem;
+background-color:var(--grey800);
+border-radius:7px;
+}
+
+main .profile .image{
+width:70px;
+border-radius:50%;
+margin:0 auto;
+}
+main .profile .image img{
+width:100%;
+border-radius:50%;
+}
+
+main .profile h3{
+text-align: center;
+color:var(--white);
+font-weight:600;
+padding-top:1rem;
+}
+
+main .profile .info{
+margin-bottom:1rem;
+color: var(--white);
+font-size: var(--font-size);
+font-weight: 400;
+}
+
+main .profile .loc{
+color:var(--green);
+text-align: center;
+margin-bottom:1rem;
+font-weight:400;
+font-size:var(--font-size);
+padding-top: 0.5rem;
+}
+
+main .links > div{
+padding:0.7rem 2rem;
+background-color:var(--grey700);
+margin-bottom: 10px;
+text-align: center;
+border-radius:7px;
+}
+main .links > div a{
+color:var(--white);
+text-decoration: none;
+font-size:var(--font-size);
+font-weight:600;
+}
